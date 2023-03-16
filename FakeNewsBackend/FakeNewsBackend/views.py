@@ -75,11 +75,6 @@ def prediction(request):
 
     response = "unknown"
 
-    if(true_prediction_count > fake_prediction_count):
-        response = "ture"
-    else:
-        response = "fake"
-
-    return JsonResponse({'prediction': response})
+   
 
 #when frontend is done, the js would take the news and create http post request and send it to server. for now, we are doing this using curl, because we dont have frontend

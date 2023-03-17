@@ -76,7 +76,7 @@ def prediction(request):
     response = "unknown"
 
     if(true_prediction_count > fake_prediction_count):
-        response = "ture"
+        response = "true"
     else:
         response = "fake"
 
